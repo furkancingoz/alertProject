@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="alertProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kayıt Ol" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jaq-fl-fbV">
+                                <rect key="frame" x="16" y="83" width="361" height="58"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kullanıcı Adı" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bls-jW-HK7">
+                                <rect key="frame" x="16" y="177" width="361" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="xvj-kY-PTe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xHW-XI-exc">
+                                <rect key="frame" x="16" y="245" width="361" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="b5O-HR-pIX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifre Tekrar" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7uI-C4-Qw2">
+                                <rect key="frame" x="16" y="307" width="361" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="sOe-v3-p5D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhs-XK-ZmO">
+                                <rect key="frame" x="155" y="416" width="83" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="YyB-mM-zqb"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Kayıt Ol"/>
+                                <connections>
+                                    <action selector="kayitOlTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sfr-eG-gND"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.87058823529411766" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bls-jW-HK7" firstAttribute="top" secondItem="Jaq-fl-fbV" secondAttribute="bottom" constant="36" id="2Yz-zM-Y76"/>
+                            <constraint firstItem="Jaq-fl-fbV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="ACh-KK-EgD"/>
+                            <constraint firstItem="7uI-C4-Qw2" firstAttribute="centerX" secondItem="rhs-XK-ZmO" secondAttribute="centerX" id="B6T-KG-ubw"/>
+                            <constraint firstItem="Jaq-fl-fbV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Gfa-qc-cCi"/>
+                            <constraint firstItem="Jaq-fl-fbV" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="J6J-vZ-Uq2"/>
+                            <constraint firstItem="Bls-jW-HK7" firstAttribute="leading" secondItem="xHW-XI-exc" secondAttribute="leading" id="JVh-Iw-pqL"/>
+                            <constraint firstItem="Bls-jW-HK7" firstAttribute="trailing" secondItem="xHW-XI-exc" secondAttribute="trailing" id="SCE-W2-3xM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rhs-XK-ZmO" secondAttribute="bottom" constant="367" id="db2-oP-TSO"/>
+                            <constraint firstItem="xHW-XI-exc" firstAttribute="trailing" secondItem="7uI-C4-Qw2" secondAttribute="trailing" id="gtc-kB-NQ9"/>
+                            <constraint firstItem="7uI-C4-Qw2" firstAttribute="top" secondItem="xHW-XI-exc" secondAttribute="bottom" constant="28" id="jTR-k7-spD"/>
+                            <constraint firstItem="xHW-XI-exc" firstAttribute="leading" secondItem="7uI-C4-Qw2" secondAttribute="leading" id="qKC-lf-rgO"/>
+                            <constraint firstItem="Jaq-fl-fbV" firstAttribute="trailing" secondItem="Bls-jW-HK7" secondAttribute="trailing" id="rKg-L4-vFF"/>
+                            <constraint firstItem="Jaq-fl-fbV" firstAttribute="leading" secondItem="Bls-jW-HK7" secondAttribute="leading" id="wVh-gK-NY9"/>
+                            <constraint firstItem="xHW-XI-exc" firstAttribute="top" secondItem="Bls-jW-HK7" secondAttribute="bottom" constant="34" id="wko-J3-dQo"/>
+                            <constraint firstItem="rhs-XK-ZmO" firstAttribute="top" secondItem="7uI-C4-Qw2" secondAttribute="bottom" constant="75" id="y1t-om-Xu6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="password2Text" destination="7uI-C4-Qw2" id="aMQ-9Q-dVg"/>
+                        <outlet property="passwordText" destination="xHW-XI-exc" id="Oft-ue-pDb"/>
+                        <outlet property="usernameText" destination="Bls-jW-HK7" id="Wxt-9F-uW3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55.725190839694655" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+</document>
